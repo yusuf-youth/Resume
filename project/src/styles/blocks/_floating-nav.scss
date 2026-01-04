@@ -1,0 +1,46 @@
+@use '../media' as *;
+@use '../mixins' as *;
+
+.floating-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  padding: 7px;
+  border-radius: 100px;
+  translate: -50%;
+  background: #22212199;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__item {
+    transition-duration: var(--transition-duration);
+  }
+
+  &__link {
+    @include center-content;
+
+    padding: 10px;
+    border-radius: 50%;
+
+    &.is-active {
+      background-color: rgba(0, 0, 0, 0.8);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    @include hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    svg {
+      @include square(23px);
+    }
+  }
+}

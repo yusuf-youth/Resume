@@ -1,0 +1,27 @@
+@use "../media" as *;
+
+.services {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      margin-inline: auto;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

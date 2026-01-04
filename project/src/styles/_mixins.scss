@@ -1,0 +1,77 @@
+@use "./media" as *;
+
+@mixin fluid-text($max, $min) {
+  font-size: clamp(#{$min}px, #{calc($max / 1440 * 100)}vw, #{$max}px);
+}
+
+@mixin reset-button() {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin center-content($isInline: false) {
+  @if $isInline {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hover-effect {
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    opacity: 0.8;
+  }
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin gradient-shift($color1, $color2) {
+  background: linear-gradient(90deg, $color1 0%, $color2 100%);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-shift 4s ease-in-out infinite alternate;
+}
+
+@mixin profile-animation {
+  position: absolute;
+  inset: -80px;
+  z-index: -1;
+  background: conic-gradient(
+    from 0deg,
+    rgba(133, 133, 133, 0.5),
+    rgba(159, 159, 159, 0.5),
+    rgba(186, 186, 186, 0.5)
+  );
+  border-radius: 50%;
+  animation: spin 30s linear infinite;
+  filter: blur(180px);
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

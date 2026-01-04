@@ -1,0 +1,55 @@
+@use "media" as *;
+
+:root {
+  --color-light: #ffffff;
+  --color-light-alt: rgb(244, 243, 243);
+  --color-dark: #161513;
+  --color-dark-alt: #222222;
+  --color-gray: #c5c5c5;
+  --color-gray-alt: #8491a0;
+  --color-silver: #d3d3d3fc;
+  --color-silver-light: #fffffffd;
+
+  --color-gradient-html-1: #ef8a73;
+  --color-gradient-html-2: #db6630;
+
+  --color-gradient-scss-1: #a858f3;
+  --color-gradient-scss-2: #d0cdcd;
+
+  --color-gradient-js-1: #ff6000;
+  --color-gradient-js-2: #d88484;
+
+  --color-gradient-react-1: #6685f4;
+  --color-gradient-react-2: #cdd5f6;
+
+  --color-gradient-structure-1: #5aa54d;
+  --color-gradient-structure-2: #c0f6d6;
+
+  --button-height: 64px;
+  --header-height: 82px;
+
+  --border: 2px solid var(--color-light);
+  --border-radius: 30px;
+
+  --font-family-base: "Inter", sans-serif;
+
+  --container-width: 1200px;
+  --container-padding-x: 20px;
+
+  --section-padding-x: 70px;
+
+  --shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --shadow-2: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  --transition-duration: 0.4s;
+
+  @include tablet {
+    --section-padding-x: 50px;
+  }
+
+  @include mobile {
+    --section-padding-x: 40px;
+  }
+}

@@ -1,0 +1,96 @@
+@use "../mixins" as *;
+@use "../media" as *;
+
+.project-card {
+  --translate: 0 -2px;
+
+  position: relative;
+  max-width: 350px;
+  overflow: hidden;
+  color: var(--color-dark);
+  background-color: var(--color-light-alt);
+  border-radius: var(--border-radius);
+  transition-duration: var(--transition-duration);
+
+  @include tablet {
+    width: 300px;
+  }
+
+  @include hover {
+    box-shadow: var(--shadow);
+    translate: var(--translate);
+
+    @include desktop-above {
+      .project-card__button {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  &__video {
+    width: 330px;
+    height: 300px;
+    object-fit: cover;
+    transition-duration: var(--transition-duration);
+
+    @include tablet {
+      height: 250px;
+    }
+
+    &.is-hovered {
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 61.5%;
+    right: 12px;
+
+    @include desktop {
+      top: 62.5%;
+    }
+
+    @include tablet {
+      top: 57%;
+    }
+
+    @include mobile {
+      top: 59%;
+    }
+  }
+
+  &__body {
+    padding: 20px;
+
+    @include mobile {
+      padding: 15px;
+    }
+  }
+
+  &__label {
+    @include fluid-text(10, 9);
+
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: var(--color-dark);
+
+    @include mobile {
+      margin-bottom: 8px;
+    }
+  }
+
+  .references__link {
+    transition-duration: 0.5s;
+
+    @include hover {
+      opacity: 1;
+    }
+  }
+}

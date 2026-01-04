@@ -1,0 +1,30 @@
+@use "../mixins" as *;
+@use "../media" as *;
+
+.video-button {
+  @include reset-button;
+  @include center-content(true);
+
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+
+  @include desktop-above {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.is-playing {
+    opacity: 1;
+    pointer-events: none !important;
+
+    svg {
+      color: var(--color-gray-alt);
+    }
+  }
+
+  svg {
+    @include square(30px);
+
+    color: var(--color-dark);
+  }
+}

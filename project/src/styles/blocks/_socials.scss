@@ -1,0 +1,38 @@
+@use "../mixins" as *;
+@use "../media" as *;
+
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    @include mobile {
+      // column-gap: 10px;
+    }
+  }
+
+  &__link {
+    @include square(19px);
+    @include hover-effect;
+
+    display: flex;
+
+    // &--icloud {
+    //   @include center-content;
+
+    //   background-color: var(--color-light);
+    //   border-radius: 50%;
+
+    //   svg {
+    //     width: 75% !important;
+    //     height: 75% !important;
+    //     color: var(--color-dark);
+    //   }
+    // }
+  }
+
+  svg {
+    @include square(100%);
+  }
+}

@@ -1,0 +1,65 @@
+@use "../mixins" as *;
+@use "../media" as *;
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  @include tablet {
+    row-gap: 8px;
+  }
+
+  &__image {
+    border-radius: var(--border-radius);
+
+    @include tablet {
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__highlighted-text {
+    &.is-html {
+      @include gradient-shift(
+        var(--color-gradient-html-1),
+        var(--color-gradient-html-2)
+      );
+    }
+
+    &.is-scss {
+      @include gradient-shift(
+        var(--color-gradient-scss-1),
+        var(--color-gradient-scss-2)
+      );
+    }
+
+    &.is-js {
+      @include gradient-shift(
+        var(--color-gradient-js-1),
+        var(--color-gradient-js-2)
+      );
+    }
+
+    &.is-react {
+      @include gradient-shift(
+        var(--color-gradient-react-1),
+        var(--color-gradient-react-2)
+      );
+    }
+
+    &.is-structure {
+      @include gradient-shift(
+        var(--color-gradient-structure-1),
+        var(--color-gradient-structure-2)
+      );
+    }
+  }
+
+  &__description {
+    @include tablet {
+      max-width: 400px;
+    }
+  }
+}
