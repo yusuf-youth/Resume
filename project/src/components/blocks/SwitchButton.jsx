@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useLanguage } from "../../context/LanguageContext";
 import useText from "../../hooks/useText";
 import { TEXTS } from "../../script/constants";
+import { useLanguage } from "../../hooks/useLanguage";
 
 function SwitchButton() {
   const { language, toggleLanguage } = useLanguage();

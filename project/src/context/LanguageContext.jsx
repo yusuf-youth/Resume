@@ -1,5 +1,5 @@
 import React from "react";
-import { createContext, useState, useContext, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const LanguageContext = createContext({
   language: null,
@@ -26,5 +26,3 @@ export const LanguageProvider = ({ children }) => {
     </LanguageContext.Provider>
   );
 };
-
-export const useLanguage = () => useContext(LanguageContext);
