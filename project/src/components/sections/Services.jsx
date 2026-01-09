@@ -3,7 +3,7 @@ import { SERVICES, TEXTS } from "../../script/constants";
 import ServiceCard from "../blocks/ServiceCard";
 import useText from "../../hooks/useText";
 
-function Services() {
+const Services = () => {
   const text = useText(TEXTS.SERVICES);
 
   return (

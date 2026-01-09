@@ -3,7 +3,7 @@ import TechCard from "../blocks/TechCard";
 import { TECHNOLOGIES, TEXTS } from "../../script/constants";
 import useText from "../../hooks/useText";
 
-function Technologies() {
+const Technologies = () => {
   const text = useText(TEXTS.TECHNOLOGIES);
 
   return (
@@ -25,6 +25,6 @@ function Technologies() {
       </div>
     </section>
   );
-}
+};
 
 export default Technologies;

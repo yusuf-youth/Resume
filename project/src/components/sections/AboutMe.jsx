@@ -3,7 +3,7 @@ import useText from "../../hooks/useText";
 import { TEXTS } from "../../script/constants";
 import avatarSrc from "../../icons/avatar.svg";
 
-function AboutMe() {
+const AboutMe = () => {
   const text = useText(TEXTS.ABOUT_ME);
 
   return (

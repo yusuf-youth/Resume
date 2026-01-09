@@ -1,13 +1,13 @@
 import React from "react";
 import { getModifierClass } from "../../script/helpers";
 
-const ServiceCard = ({
-  imageSrc,
-  imageAlt,
-  title,
-  highlightedText,
-  children,
-}) => {
+const ServiceCard = (props) => {
+  const { imageSrc } = props;
+  const { imageAlt } = props;
+  const { title } = props;
+  const { highlightedText } = props;
+  const { children } = props;
+
   return (
     <article className="what-i-offer__card service-card">
       <div className={`box`}>

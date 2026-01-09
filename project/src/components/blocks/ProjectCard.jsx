@@ -3,7 +3,13 @@ import { useRef, useState } from "react";
 import References from "./References";
 import VideoButton from "./VideoButton";
 
-const ProjectCard = ({ title, label, videoSrc, poster, delay, links = [] }) => {
+const ProjectCard = (props) => {
+  const { title } = props;
+  const { label } = props;
+  const { videoSrc } = props;
+  const { poster } = props;
+  const { delay } = props;
+  const { links = [] } = props;
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 

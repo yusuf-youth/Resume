@@ -9,7 +9,7 @@ import {
 } from "./script/index";
 import useAOS from "./hooks/useAOS";
 
-function App() {
+const App = () => {
   useAOS();
 
   return (

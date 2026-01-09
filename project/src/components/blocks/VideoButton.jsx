@@ -3,13 +3,16 @@ import useText from "../../hooks/useText";
 import { TEXTS } from "../../script/constants";
 import { PauseIcon, PlayIcon } from "../../script/icons";
 
-function VideoButton({ className, isPlaying, onClick = () => null }) {
+const VideoButton = (props) => {
+  const { className = "" } = props;
+  const { isPlaying } = props;
+  const { onClick = () => null } = props;
   const title = useText(TEXTS.VIDEO_BUTTON);
-  const modifier = `${isPlaying ? "is-playing" : ""}`;
+  const isPlayingState = isPlaying ? "is-playing" : "";
 
   return (
     <button
-      className={`${className} video-button ${modifier}`}
+      className={`${className} video-button ${isPlayingState}`}
       onClick={onClick}
       aria-label={title}
       title={title}
@@ -17,6 +20,6 @@ function VideoButton({ className, isPlaying, onClick = () => null }) {
       {isPlaying ? <PauseIcon /> : <PlayIcon />}
     </button>
   );
-}
+};
 
 export default VideoButton;

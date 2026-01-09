@@ -3,7 +3,7 @@ import ProjectCard from "../blocks/ProjectCard";
 import { PROJECTS, TEXTS } from "../../script/constants";
 import useText from "../../hooks/useText";
 
-function Projects() {
+const Projects = () => {
   const text = useText(TEXTS.PROJECTS);
 
   return (

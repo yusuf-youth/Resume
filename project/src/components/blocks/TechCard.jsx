@@ -1,6 +1,11 @@
 import React from "react";
 
-const TechCard = ({ label, delay, modifierClass = "", icon }) => {
+const TechCard = (props) => {
+  const { label } = props;
+  const { delay } = props;
+  const { modifierClass = "" } = props;
+  const { icon } = props;
+
   return (
     <article
       className={`technologies__card tech-card ${modifierClass}`}
@@ -14,4 +19,3 @@ const TechCard = ({ label, delay, modifierClass = "", icon }) => {
 };
 
 export default TechCard;
-

@@ -3,7 +3,7 @@ import useText from "../../hooks/useText";
 import { TEXTS } from "../../script/constants";
 import { useLanguage } from "../../hooks/useLanguage";
 
-function SwitchButton() {
+const SwitchButton = () => {
   const { language, toggleLanguage } = useLanguage();
   const text = useText(TEXTS.SWITCH_BUTTON);
   const checked = language === "UA";

@@ -6,7 +6,7 @@ import useText from "../../hooks/useText";
 import iconSrc from "../../icons/profile.svg";
 import Button from "../blocks/Button";
 
-function Home() {
+const Home = () => {
   const text = useText(TEXTS.HOME);
 
   return (
