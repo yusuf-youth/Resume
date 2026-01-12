@@ -33,6 +33,6 @@ const SwitchButton = () => {
       <span className="switch-button__label">{text.label}</span>
     </div>
   );
-}
+};
 
 export default SwitchButton;

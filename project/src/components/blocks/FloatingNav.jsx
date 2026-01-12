@@ -1,5 +1,9 @@
 import React from "react";
-import { FLOATING_NAV_ITEMS, TEXTS } from "../../script/constants";
+import {
+  CLASS_STATES,
+  FLOATING_NAV_ITEMS,
+  TEXTS,
+} from "../../script/constants";
 import useText from "../../hooks/useText";
 import useActiveSection from "../../hooks/useActiveSection";
 
@@ -7,7 +11,8 @@ const FloatingNav = () => {
   const text = useText(TEXTS.FLOATING_NAV);
   const activeIndex = useActiveSection(FLOATING_NAV_ITEMS);
 
-  const getActiveClass = (index) => (index === activeIndex ? "is-active" : "");
+  const getActiveClass = (index) =>
+    index === activeIndex ? CLASS_STATES.isActive : "";
 
   return (
     <nav className="floating-nav">

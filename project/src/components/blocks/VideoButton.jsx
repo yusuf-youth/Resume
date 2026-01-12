@@ -1,6 +1,6 @@
 import React from "react";
 import useText from "../../hooks/useText";
-import { TEXTS } from "../../script/constants";
+import { CLASS_STATES, TEXTS } from "../../script/constants";
 import { PauseIcon, PlayIcon } from "../../script/icons";
 
 const VideoButton = (props) => {
@@ -8,7 +8,7 @@ const VideoButton = (props) => {
   const { isPlaying } = props;
   const { onClick = () => null } = props;
   const title = useText(TEXTS.VIDEO_BUTTON);
-  const isPlayingState = isPlaying ? "is-playing" : "";
+  const isPlayingState = isPlaying ? CLASS_STATES.isPlaying : "";
 
   return (
     <button

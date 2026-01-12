@@ -1,4 +1,5 @@
 import React from "react";
+import { CLASS_STATES } from "../../script/constants";
 
 const Button = (props) => {
   const { className } = props;
@@ -6,8 +7,8 @@ const Button = (props) => {
   const { dark = false } = props;
   const { bordered = false } = props;
   const { children } = props;
-  const isDark = dark ? "button--dark" : "";
-  const isBordered = bordered ? "button--dark-bordered" : "";
+  const isDark = dark ? CLASS_STATES.buttonDark : "";
+  const isBordered = bordered ? CLASS_STATES.buttonDarkBordered : "";
 
   return (
     <a

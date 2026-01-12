@@ -221,3 +221,10 @@ export const TEXTS = {
   SWITCH_BUTTON: "switchButton",
   VIDEO_BUTTON: "videoButton",
 };
+
+export const CLASS_STATES = {
+  isActive: "is-active",
+  isPlaying: "is-playing",
+  buttonDark: "button--dark",
+  buttonDarkBordered: "button--dark-bordered"
+};
