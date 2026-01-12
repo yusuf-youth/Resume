@@ -60,7 +60,7 @@ export const SOCIALS = [
   {
     name: "iCloud",
     url: "mailto:youclaim@icloud.com",
-    title: "iCloud",
+    title: "Mail",
     icon: <MailIcon />,
   },
   {

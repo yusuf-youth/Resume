@@ -1,0 +1,25 @@
+@use "normalize";
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "globals";
+
+@use "components/section";
+@use "components/socials";
+@use "components/button";
+@use "components/project-card";
+@use "components/references";
+@use "components/service-card";
+@use "components/floating-nav";
+@use "components/switch-button";
+@use "components/tech-card";
+@use "components/link";
+@use "components/video-button";
+@use "components/box";
+
+@use "sections/home";
+@use "sections/about-me";
+@use "sections/technologies";
+@use "sections/projects";
+@use "sections/services";
+@use "sections/content";

@@ -1,5 +1,4 @@
-@use '../media' as *;
-@use '../mixins' as *;
+@use "../helpers" as *;
 
 .floating-nav {
   position: fixed;

@@ -1,5 +1,4 @@
-@use "../mixins" as *;
-@use "../media" as *;
+@use "../helpers" as *;
 
 .service-card {
   display: flex;

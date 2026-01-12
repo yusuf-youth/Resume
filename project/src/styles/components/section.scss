@@ -1,6 +1,5 @@
-@use "../media" as *;
-@use "../mixins" as *;
 @use "../utils" as *;
+@use "../helpers" as *;
 
 .section {
   @extend .container;

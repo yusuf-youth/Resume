@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLanguage } from "../hooks/useLanguage";
 import useText from "../hooks/useText";
 import { TEXTS } from "../script/constants";
@@ -6,7 +6,7 @@ import { TEXTS } from "../script/constants";
 const SwitchButton = () => {
   const { language, toggleLanguage } = useLanguage();
   const text = useText(TEXTS.SWITCH_BUTTON);
-  const checked = language === "UA";
+  const isChecked = language === "UA";
 
   const onChange = (e) => {
     toggleLanguage(e.target.checked);
@@ -23,7 +23,7 @@ const SwitchButton = () => {
         <input
           type="checkbox"
           className="switch-button__input"
-          checked={checked}
+          checked={isChecked}
           onChange={onChange}
         />
         <span className="switch-button__track">

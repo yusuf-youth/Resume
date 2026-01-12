@@ -1,5 +1,4 @@
-@use "../mixins" as *;
-@use "../media" as *;
+@use "../helpers" as *;
 
 .project-card {
   --translate: 0 -2px;
