@@ -1,5 +1,5 @@
 import React from "react";
-import { CLASS_STATES } from "../../script/constants";
+import { CLASS_STATES } from "../script/constants";
 
 const Button = (props) => {
   const { className } = props;

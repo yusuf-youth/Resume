@@ -1,8 +1,8 @@
 import React from "react";
 import { SERVICES, TEXTS } from "../../script/constants";
-import ServiceCard from "../blocks/ServiceCard";
+import ServiceCard from "../ServiceCard";
 import useText from "../../hooks/useText";
-import Section from "../blocks/Section";
+import Section from "../Section";
 
 const Services = () => {
   const text = useText(TEXTS.SERVICES);

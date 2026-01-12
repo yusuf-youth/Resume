@@ -1,7 +1,7 @@
 import React from "react";
-import useText from "../../hooks/useText";
-import { CLASS_STATES, TEXTS } from "../../script/constants";
-import { PauseIcon, PlayIcon } from "../../script/icons";
+import useText from "../hooks/useText";
+import { CLASS_STATES, TEXTS } from "../script/constants";
+import { PauseIcon, PlayIcon } from "../script/icons";
 
 const VideoButton = (props) => {
   const { className = "" } = props;

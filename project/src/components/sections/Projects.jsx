@@ -1,8 +1,8 @@
 import React from "react";
-import ProjectCard from "../blocks/ProjectCard";
+import ProjectCard from "../ProjectCard";
 import { PROJECTS, TEXTS } from "../../script/constants";
 import useText from "../../hooks/useText";
-import Section from "../blocks/Section";
+import Section from "../Section";
 
 const Projects = () => {
   const text = useText(TEXTS.PROJECTS);

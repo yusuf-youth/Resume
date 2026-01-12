@@ -1,5 +1,5 @@
 import React from "react";
-import { getModifierClass } from "../../script/helpers";
+import { getModifierClass } from "../script/helpers";
 
 const ServiceCard = (props) => {
   const { imageSrc } = props;

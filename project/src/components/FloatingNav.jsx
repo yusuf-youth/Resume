@@ -3,9 +3,9 @@ import {
   CLASS_STATES,
   FLOATING_NAV_ITEMS,
   TEXTS,
-} from "../../script/constants";
-import useText from "../../hooks/useText";
-import useActiveSection from "../../hooks/useActiveSection";
+} from "../script/constants";
+import useText from "../hooks/useText";
+import useActiveSection from "../hooks/useActiveSection";
 
 const FloatingNav = () => {
   const text = useText(TEXTS.FLOATING_NAV);

@@ -2,7 +2,7 @@ import React from "react";
 import useText from "../../hooks/useText";
 import { TEXTS } from "../../script/constants";
 import avatarSrc from "../../icons/avatar.svg";
-import Section from "../blocks/Section";
+import Section from "../Section";
 
 const AboutMe = () => {
   const text = useText(TEXTS.ABOUT_ME);

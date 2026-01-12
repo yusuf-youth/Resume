@@ -1,11 +1,11 @@
 import React from "react";
-import SwitchButton from "../blocks/SwitchButton";
-import Socials from "../blocks/Socials";
+import SwitchButton from "../SwitchButton";
+import Socials from "../Socials";
 import { SOCIALS, TEXTS } from "../../script/constants";
 import useText from "../../hooks/useText";
 import iconSrc from "../../icons/profile.svg";
-import Button from "../blocks/Button";
-import Section from "../blocks/Section";
+import Button from "../Button";
+import Section from "../Section";
 
 const Home = () => {
   const text = useText(TEXTS.HOME);

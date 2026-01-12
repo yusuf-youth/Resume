@@ -1,8 +1,8 @@
 import React from "react";
-import TechCard from "../blocks/TechCard";
+import TechCard from "../TechCard";
 import { TECHNOLOGIES, TEXTS } from "../../script/constants";
 import useText from "../../hooks/useText";
-import Section from "../blocks/Section";
+import Section from "../Section";
 
 const Technologies = () => {
   const text = useText(TEXTS.TECHNOLOGIES);
