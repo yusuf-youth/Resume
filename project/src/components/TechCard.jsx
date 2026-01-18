@@ -1,10 +1,10 @@
 import React from "react";
 
 const TechCard = (props) => {
-  const { label } = props;
-  const { delay } = props;
   const { modifierClass = "" } = props;
+  const { delay } = props;
   const { icon } = props;
+  const { label } = props;
 
   return (
     <article
