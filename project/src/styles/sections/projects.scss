@@ -5,7 +5,7 @@
   flex-direction: column;
   row-gap: 20px;
 
-  @include desktop {
+  @include laptop {
     margin-inline: auto;
   }
 
@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     gap: 50px;
 
-    @include desktop {
+    @include laptop {
       justify-content: center;
     }
 

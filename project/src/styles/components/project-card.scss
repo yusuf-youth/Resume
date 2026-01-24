@@ -19,7 +19,7 @@
     box-shadow: var(--shadow);
     translate: var(--translate);
 
-    @include desktop-above {
+    @include laptop-above {
       .project-card__button {
         opacity: 1;
         pointer-events: all;
@@ -47,7 +47,7 @@
     top: 61.5%;
     right: 12px;
 
-    @include desktop {
+    @include laptop {
       top: 62.5%;
     }
 
