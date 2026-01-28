@@ -7,18 +7,20 @@ const References = ({ links = [] }) => {
   return (
     <div className="project-card__references references">
       <ul className="references__list">
-        {links.map((link, index) => (
-          <li key={index} className="references__item">
-            <Button
-              className="references__link"
-              dark={link.type === "live"}
-              bordered={link.type !== "live"}
-              href={link.href}
-            >
-              {link.text}
-            </Button>
-          </li>
-        ))}
+        {links.map(
+          ({ modifierClass, isDark, isBordered, href, text }, index) => (
+            <li key={index} className="references__item">
+              <Button
+                className={`references__link ${modifierClass}`}
+                dark={isDark}
+                bordered={isBordered}
+                href={href}
+              >
+                {text}
+              </Button>
+            </li>
+          ),
+        )}
       </ul>
     </div>
   );

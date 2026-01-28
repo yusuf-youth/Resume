@@ -32,14 +32,18 @@ export const translations = {
                     alt: "Landing Page: Mintlify",
                     links: [
                         {
-                            text: "Live Demo",
+                            modifierClass: "references__link--dark",
+                            isDark: true,
+                            isBordered: false,
                             href: "https://yusuf-youth.github.io/Mintlify/",
-                            type: "live",
+                            text: "Live Demo",
                         },
                         {
-                            text: "GitHub Repo",
+                            modifierClass: "references__link--light",
+                            isDark: false,
+                            isBordered: true,
                             href: "https://github.com/yusuf-youth/Mintlify",
-                            type: "repo",
+                            text: "GitHub Repo",
                         },
                     ],
                 },
@@ -49,14 +53,18 @@ export const translations = {
                     alt: "Single Page Application: Architect",
                     links: [
                         {
-                            text: "Live Demo",
+                            modifierClass: "references__link--dark",
+                            isDark: true,
+                            isBordered: false,
                             href: "https://yusuf-youth.github.io/Architect/",
-                            type: "live",
+                            text: "Live Demo",
                         },
                         {
-                            text: "GitHub Repo",
+                            modifierClass: "references__link--light",
+                            isDark: false,
+                            isBordered: true,
                             href: "https://github.com/yusuf-youth/Architect",
-                            type: "repo",
+                            text: "GitHub Repo",
                         },
                     ],
                 },
@@ -66,14 +74,18 @@ export const translations = {
                     alt: "Tasks app",
                     links: [
                         {
-                            text: "Live Demo",
+                            modifierClass: "references__link--dark",
+                            isDark: true,
+                            isBordered: false,
                             href: "https://yusuf-youth.github.io/Tasks/",
-                            type: "live",
+                            text: "Live Demo",
                         },
                         {
-                            text: "GitHub Repo",
+                            modifierClass: "references__link--light",
+                            isDark: false,
+                            isBordered: true,
                             href: "https://github.com/yusuf-youth/Tasks",
-                            type: "repo",
+                            text: "GitHub Repo",
                         },
                     ],
                 },
@@ -83,14 +95,18 @@ export const translations = {
                     alt: "Magazine website",
                     links: [
                         {
-                            text: "Live Demo",
+                            modifierClass: "references__link--dark",
+                            isDark: true,
+                            isBordered: false,
                             href: "https://yusuf-youth.github.io/Magazine/",
-                            type: "live",
+                            text: "Live Demo",
                         },
                         {
-                            text: "GitHub Repo",
+                            modifierClass: "references__link--light",
+                            isDark: false,
+                            isBordered: true,
                             href: "https://github.com/yusuf-youth/Magazine",
-                            type: "repo",
+                            text: "GitHub Repo",
                         },
                     ],
                 },
@@ -100,14 +116,18 @@ export const translations = {
                     alt: "Dashboard SPA",
                     links: [
                         {
-                            text: "Live Demo",
+                            modifierClass: "references__link--dark",
+                            isDark: true,
+                            isBordered: false,
                             href: "https://yusuf-youth.github.io/Dashboard/",
-                            type: "live",
+                            text: "Live Demo",
                         },
                         {
-                            text: "GitHub Repo",
+                            modifierClass: "references__link--light",
+                            isDark: false,
+                            isBordered: true,
                             href: "https://github.com/yusuf-youth/Dashboard",
-                            type: "repo",
+                            text: "GitHub Repo",
                         },
                     ],
                 },
@@ -117,14 +137,18 @@ export const translations = {
                     alt: "Focusify app",
                     links: [
                         {
-                            text: "Live Demo",
+                            modifierClass: "references__link--dark",
+                            isDark: true,
+                            isBordered: false,
                             href: "https://yusuf-youth.github.io/Focusify/",
-                            type: "live",
+                            text: "Live Demo",
                         },
                         {
-                            text: "GitHub Repo",
+                            modifierClass: "references__link--light",
+                            isDark: false,
+                            isBordered: true,
                             href: "https://github.com/yusuf-youth/Focusify",
-                            type: "repo",
+                            text: "GitHub Repo",
                         },
                     ],
                 },
@@ -212,13 +236,13 @@ export const translations = {
                     imgTitle: "Ви переглядаєте проєкт.",
                     links: [
                         {
-                            text: "Жива демо",
                             href: "https://yusuf-youth.github.io/Mintlify/",
+                            text: "Жива демо",
                             type: "live",
                         },
                         {
-                            text: "Репозиторій GitHub",
                             href: "https://github.com/yusuf-youth/Mintlify",
+                            text: "Репозиторій GitHub",
                             type: "repo",
                         },
                     ],
@@ -229,13 +253,13 @@ export const translations = {
                     alt: "Односторінковий додаток «Архітектор»",
                     links: [
                         {
-                            text: "Жива демо",
                             href: "https://yusuf-youth.github.io/Architect/",
+                            text: "Жива демо",
                             type: "live",
                         },
                         {
-                            text: "Репозиторій GitHub",
                             href: "https://github.com/yusuf-youth/Architect",
+                            text: "Репозиторій GitHub",
                             type: "repo",
                         },
                     ],
@@ -246,13 +270,13 @@ export const translations = {
                     alt: "Додаток «Задачі»",
                     links: [
                         {
-                            text: "Жива демо",
                             href: "https://yusuf-youth.github.io/Tasks/",
+                            text: "Жива демо",
                             type: "live",
                         },
                         {
-                            text: "Репозиторій GitHub",
                             href: "https://github.com/yusuf-youth/Tasks",
+                            text: "Репозиторій GitHub",
                             type: "repo",
                         },
                     ],
@@ -263,13 +287,13 @@ export const translations = {
                     alt: "Вебсайт журналу",
                     links: [
                         {
-                            text: "Жива демо",
                             href: "https://yusuf-youth.github.io/Magazine/",
+                            text: "Жива демо",
                             type: "live",
                         },
                         {
-                            text: "Репозиторій GitHub",
                             href: "https://github.com/yusuf-youth/Magazine",
+                            text: "Репозиторій GitHub",
                             type: "repo",
                         },
                     ],
@@ -280,13 +304,13 @@ export const translations = {
                     alt: "Додаток «Інформаційна панель»",
                     links: [
                         {
-                            text: "Жива демо",
                             href: "https://yusuf-youth.github.io/Dashboard/",
+                            text: "Жива демо",
                             type: "live",
                         },
                         {
-                            text: "Репозиторій GitHub",
                             href: "https://github.com/yusuf-youth/Dashboard",
+                            text: "Репозиторій GitHub",
                             type: "repo",
                         },
                     ],
@@ -297,13 +321,13 @@ export const translations = {
                     alt: "Focusify додаток",
                     links: [
                         {
-                            text: "Жива демо",
                             href: "https://yusuf-youth.github.io/Focusify/",
+                            text: "Жива демо",
                             type: "live",
                         },
                         {
-                            text: "Репозиторій GitHub",
                             href: "https://github.com/yusuf-youth/Focusify",
+                            text: "Репозиторій GitHub",
                             type: "repo",
                         },
                     ],

@@ -13,5 +13,18 @@
 
   &__link {
     font-size: 13.5px;
+    transition-duration: 0s !important;
+
+    &--dark {
+      @include hover {
+        background-color: color-mix(in srgb, var(--color-dark), white 10%);
+      }
+    }
+
+    &--light {
+      @include hover {
+        background-color: color-mix(in srgb, var(--color-light), black 10%);
+      }
+    }
   }
 }
