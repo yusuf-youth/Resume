@@ -1,5 +1,4 @@
 import React from "react";
-import { getModifierClass } from "../script/helpers";
 import { useLanguage } from "../hooks/useLanguage";
 
 const ServiceCard = (props) => {
@@ -11,6 +10,7 @@ const ServiceCard = (props) => {
   const { title } = data;
   const { highlightedText } = data;
   const { description } = data;
+  const { modifierClass } = data;
 
   return (
     <article className={`${classname} service-card`}>
@@ -28,11 +28,7 @@ const ServiceCard = (props) => {
       </div>
       <h3 className="service-card__title h4">
         {title(isEN)}{" "}
-        <span
-          className={`service-card__highlighted-text ${getModifierClass(
-            highlightedText(isEN),
-          )}`}
-        >
+        <span className={`service-card__highlighted-text ${modifierClass}`}>
           {highlightedText(isEN)}
         </span>
       </h3>

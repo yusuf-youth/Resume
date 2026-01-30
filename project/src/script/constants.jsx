@@ -159,6 +159,7 @@ export const SERVICES = [
     description: isEN => isEN
       ? "Semantic. Accessible. To all users."
       : "Семантичний. Доступний. Для всіх користувачів.",
+    modifierClass: "service-card__highlighted-text--orange",
   },
   {
     imageSrc: scssImage,
@@ -169,6 +170,7 @@ export const SERVICES = [
     description: isEN => isEN
       ? "Clean. Modular. The DRY principle."
       : "Чисто. Модульно. Принцип DRY.",
+    modifierClass: "service-card__highlighted-text--purple",
   },
   {
     imageSrc: jsImage,
@@ -179,6 +181,7 @@ export const SERVICES = [
     description: isEN => isEN
       ? "Robust. Modern. Ensured code maintainability."
       : "Надійний. Сучасний. Гарантована підтримка коду.",
+    modifierClass: "service-card__highlighted-text--red",
   },
   {
     imageSrc: reactImage,
@@ -189,6 +192,7 @@ export const SERVICES = [
     description: isEN => isEN
       ? "Reusable. Testable. Encapsulated logic and UI."
       : "Багаторазовий. Тестований. Інкапсульована логіка та інтерфейс користувача.",
+    modifierClass: "service-card__highlighted-text--blue",
   },
   {
     imageSrc: structureImage,
@@ -199,6 +203,7 @@ export const SERVICES = [
     description: isEN => isEN 
       ? "Structured. Scalable. No room for mess."
       : "Структурований. Масштабований. Немає місця для безладу.",
+    modifierClass: "service-card__highlighted-text--green",
   },
 ];
 

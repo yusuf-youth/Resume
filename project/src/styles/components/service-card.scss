@@ -20,35 +20,35 @@
   }
 
   &__highlighted-text {
-    &.is-html {
+    &--orange {
       @include gradient-shift(
         var(--color-gradient-html-1),
         var(--color-gradient-html-2)
       );
     }
 
-    &.is-scss {
+    &--purple {
       @include gradient-shift(
         var(--color-gradient-scss-1),
         var(--color-gradient-scss-2)
       );
     }
 
-    &.is-js {
+    &--red {
       @include gradient-shift(
         var(--color-gradient-js-1),
         var(--color-gradient-js-2)
       );
     }
 
-    &.is-react {
+    &--blue {
       @include gradient-shift(
         var(--color-gradient-react-1),
         var(--color-gradient-react-2)
       );
     }
 
-    &.is-structure {
+    &--green {
       @include gradient-shift(
         var(--color-gradient-structure-1),
         var(--color-gradient-structure-2)
