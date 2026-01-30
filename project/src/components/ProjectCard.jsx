@@ -4,6 +4,7 @@ import References from "./References";
 import VideoButton from "./VideoButton";
 
 const ProjectCard = (props) => {
+  const { className } = props;
   const { title } = props;
   const { label } = props;
   const { videoSrc } = props;
@@ -28,7 +29,7 @@ const ProjectCard = (props) => {
 
   return (
     <div data-aos="zoom-out" data-aos-delay={delay} data-aos-duration="800">
-      <article className="projects__card project-card">
+      <article className={`${className} project-card`}>
         <video
           className={`project-card__video ${isPlaying ? "is-hovered" : ""}`}
           ref={videoRef}

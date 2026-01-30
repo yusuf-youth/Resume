@@ -14,6 +14,7 @@ const Services = () => {
           {SERVICES.map((service, index) => (
             <li key={index} className="services__item">
               <ServiceCard
+                className="what-i-offer__card"
                 imageSrc={service.imageSrc}
                 imageAlt={service.imageAlt}
                 title={text.data[index].title}

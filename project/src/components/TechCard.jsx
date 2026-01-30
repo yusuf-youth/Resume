@@ -1,6 +1,7 @@
 import React from "react";
 
 const TechCard = (props) => {
+  const { className } = props
   const { modifierClass = "" } = props;
   const { delay } = props;
   const { icon } = props;
@@ -8,7 +9,7 @@ const TechCard = (props) => {
 
   return (
     <article
-      className={`technologies__card tech-card ${modifierClass}`}
+      className={`${className} tech-card ${modifierClass}`}
       data-aos="fade-right"
       data-aos-delay={delay}
     >

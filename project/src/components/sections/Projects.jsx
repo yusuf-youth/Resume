@@ -14,6 +14,7 @@ const Projects = () => {
           {text.data.map((item, index) => (
             <li key={index} className="projects__item">
               <ProjectCard
+                className="projects__card"
                 {...item}
                 videoSrc={PROJECTS[index].videoSrc}
                 poster={PROJECTS[index].poster}

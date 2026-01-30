@@ -2,6 +2,7 @@ import React from "react";
 import { getModifierClass } from "../script/helpers";
 
 const ServiceCard = (props) => {
+  const { classname } = props;
   const { imageSrc } = props;
   const { imageAlt } = props;
   const { title } = props;
@@ -9,7 +10,7 @@ const ServiceCard = (props) => {
   const { children } = props;
 
   return (
-    <article className="what-i-offer__card service-card">
+    <article className={`${classname} service-card`}>
       <div className={`box`}>
         <div className="box__background">
           <div className="box__floating-layer">
@@ -32,7 +33,7 @@ const ServiceCard = (props) => {
           {highlightedText}
         </span>
       </h3>
-      <div className="service-card__description">{children}</div>
+      <p className="service-card__description">{children}</p>
     </article>
   );
 };

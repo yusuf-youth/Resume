@@ -17,7 +17,7 @@ const Technologies = () => {
         <ul className="technologies__list">
           {TECHNOLOGIES.map((tech, index) => (
             <li key={index} className="technologies__item">
-              <TechCard {...tech} />
+              <TechCard className="technologies__card" {...tech} />
             </li>
           ))}
         </ul>
