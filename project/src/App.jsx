@@ -5,7 +5,7 @@ import {
   Technologies,
   Projects,
   Services,
-  FloatingNav,
+  Nav,
 } from "./script/index";
 import useAOS from "./hooks/useAOS";
 
@@ -21,7 +21,7 @@ const App = () => {
         <Technologies />
         <Projects />
         <Services />
-        <FloatingNav />
+        <Nav />
       </main>
     </>
   );

@@ -1,13 +1,9 @@
 import React from "react";
-import {
-  CLASS_STATES,
-  FLOATING_NAV_ITEMS,
-  TEXTS,
-} from "../script/constants";
+import { CLASS_STATES, FLOATING_NAV_ITEMS, TEXTS } from "../script/constants";
 import useText from "../hooks/useText";
 import useActiveSection from "../hooks/useActiveSection";
 
-const FloatingNav = () => {
+const Nav = () => {
   const text = useText(TEXTS.FLOATING_NAV);
   const activeIndex = useActiveSection(FLOATING_NAV_ITEMS);
 
@@ -15,13 +11,13 @@ const FloatingNav = () => {
     index === activeIndex ? CLASS_STATES.isActive : "";
 
   return (
-    <nav className="floating-nav">
-      <ul className="floating-nav__list">
+    <nav className="nav">
+      <ul className="nav__list">
         {FLOATING_NAV_ITEMS.map((item, index) => (
-          <li key={index} className="floating-nav__item">
+          <li key={index} className="nav__item">
             <a
               href={item.href}
-              className={`floating-nav__link ${getActiveClass(index)}`}
+              className={`nav__link ${getActiveClass(index)}`}
               aria-label={text.data[index]}
               title={text.data[index]}
             >
@@ -35,4 +31,4 @@ const FloatingNav = () => {
   );
 };
 
-export default FloatingNav;
+export default Nav;
