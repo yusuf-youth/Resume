@@ -191,14 +191,10 @@ export const translations = {
                 },
             ],
         },
-        floatingNav: {
-            data: ["Home", "About Me", "Technologies", "Projects", "What I Offer"],
-        },
         switchButton: {
             accessibilityText: "Switch to ukrainian",
             label: "UA",
         },
-        videoButton: "Play video",
     },
 
     UA: {
@@ -371,13 +367,9 @@ export const translations = {
                 },
             ],
         },
-        floatingNav: {
-            data: ["Головна", "Про мене", "Технології", "Проєкти", "Що я пропоную"],
-        },
         switchButton: {
             accessibilityText: "Українська мова ввімкнена",
             label: "УКР",
         },
-        videoButton: "Відтворити відео",
     },
 };

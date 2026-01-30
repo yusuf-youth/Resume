@@ -1,13 +1,16 @@
 import React from "react";
 import { getModifierClass } from "../script/helpers";
+import { useLanguage } from "../hooks/useLanguage";
 
 const ServiceCard = (props) => {
+  const { isEN } = useLanguage();
   const { classname } = props;
-  const { imageSrc } = props;
-  const { imageAlt } = props;
-  const { title } = props;
-  const { highlightedText } = props;
-  const { children } = props;
+  const { data } = props;
+  const { imageSrc } = data;
+  const { imageAlt } = data;
+  const { title } = data;
+  const { highlightedText } = data;
+  const { description } = data;
 
   return (
     <article className={`${classname} service-card`}>
@@ -24,16 +27,16 @@ const ServiceCard = (props) => {
         </div>
       </div>
       <h3 className="service-card__title h4">
-        {title}{" "}
+        {title(isEN)}{" "}
         <span
           className={`service-card__highlighted-text ${getModifierClass(
-            highlightedText
+            highlightedText(isEN),
           )}`}
         >
-          {highlightedText}
+          {highlightedText(isEN)}
         </span>
       </h3>
-      <p className="service-card__description">{children}</p>
+      <p className="service-card__description">{description(isEN)}</p>
     </article>
   );
 };

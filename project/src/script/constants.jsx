@@ -154,60 +154,90 @@ export const SERVICES = [
     imageSrc: htmlImage,
     imageAlt: "HTML",
     key: "HTML",
+    title: (isEN) => isEN ? "Semantic" : "Семантичний",
+    highlightedText: () => "HTML",
+    description: isEN => isEN
+      ? "Semantic. Accessible. To all users."
+      : "Семантичний. Доступний. Для всіх користувачів.",
   },
   {
     imageSrc: scssImage,
     imageAlt: "SCSS",
     key: "SCSS",
+    title: (isEN) => isEN ? "Modular" : "Модульна",
+    highlightedText: () => "SCSS",
+    description: isEN => isEN
+      ? "Clean. Modular. The DRY principle."
+      : "Чисто. Модульно. Принцип DRY.",
   },
   {
     imageSrc: jsImage,
     imageAlt: "JS",
     key: "JS",
+    title: (isEN) => isEN ? "Robust" : "Надійний",
+    highlightedText: () => "JS",
+    description: isEN => isEN
+      ? "Robust. Modern. Ensured code maintainability."
+      : "Надійний. Сучасний. Гарантована підтримка коду.",
   },
   {
     imageSrc: reactImage,
     imageAlt: "React",
     key: "React",
+    title: (isEN) => isEN ? "Efficient" : "Ефективний",
+    highlightedText: () => "React",
+    description: isEN => isEN
+      ? "Reusable. Testable. Encapsulated logic and UI."
+      : "Багаторазовий. Тестований. Інкапсульована логіка та інтерфейс користувача.",
   },
   {
     imageSrc: structureImage,
     imageAlt: "Folder structure",
     key: "FolderStructure",
+    title: (isEN) => isEN ? "Organized" : "Організована",
+    highlightedText: isEN => isEN ? "Structure" : "структура",
+    description: isEN => isEN 
+      ? "Structured. Scalable. No room for mess."
+      : "Структурований. Масштабований. Немає місця для безладу.",
   },
 ];
 
-export const FLOATING_NAV_ITEMS = [
+export const NAV_ITEMS = [
   {
     href: "#home",
     icon: <HomeIcon />,
     activeIcon: <HomeFillIcon />,
     titleKey: "home",
     isActive: true,
+    accessibilityText: isEN => isEN ? "Home" : "Головна",
   },
   {
     href: "#aboutMe",
     icon: <PersonIcon />,
     activeIcon: <PersonFillIcon />,
     titleKey: "aboutMe",
+    accessibilityText: isEN => isEN ? "About Me" : "Про мене",
   },
   {
     href: "#technologies",
     icon: <CodeIcon />,
     activeIcon: <CodeFillIcon />,
     titleKey: "technologies",
+    accessibilityText: isEN => isEN ? "Technologies" : "Технології",
   },
   {
     href: "#projects",
     icon: <SuitCaseIcon />,
     activeIcon: <SuitCaseFillIcon />,
     titleKey: "projects",
+    accessibilityText: isEN => isEN ? "Projects" : "Проєкти",
   },
   {
     href: "#services",
     icon: <PalleteIcon />,
     activeIcon: <PalleteFillIcon />,
     titleKey: "services",
+    accessibilityText: isEN => isEN ? "What I Offer" : "Що я пропоную",
   },
 ];
 
@@ -226,5 +256,5 @@ export const CLASS_STATES = {
   isActive: "is-active",
   isPlaying: "is-playing",
   buttonDark: "button--dark",
-  buttonDarkBordered: "button--dark-bordered"
+  buttonDarkBordered: "button--dark-bordered",
 };

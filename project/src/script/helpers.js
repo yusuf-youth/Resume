@@ -7,7 +7,7 @@ export function getModifierClass(highlightedText) {
         return "is-scss";
     }
 
-    if (highlightedText === "JavaScript") {
+    if (highlightedText === "JS") {
         return "is-js";
     }
 

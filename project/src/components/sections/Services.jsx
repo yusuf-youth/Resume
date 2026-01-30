@@ -11,17 +11,9 @@ const Services = () => {
     <Section id="services" title={text.title} description={text.description}>
       <div className="services">
         <ul className="services__list">
-          {SERVICES.map((service, index) => (
-            <li key={index} className="services__item">
-              <ServiceCard
-                className="what-i-offer__card"
-                imageSrc={service.imageSrc}
-                imageAlt={service.imageAlt}
-                title={text.data[index].title}
-                highlightedText={text.data[index]?.highlightedText}
-              >
-                {text.data[index].description}
-              </ServiceCard>
+          {SERVICES.map((service) => (
+            <li key={service.key} className="services__item">
+              <ServiceCard className="what-i-offer__card" data={service} />
             </li>
           ))}
         </ul>
