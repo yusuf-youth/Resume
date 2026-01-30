@@ -8,13 +8,14 @@ import {
   Nav,
 } from "./script/index";
 import useAOS from "./hooks/useAOS";
+import H1 from "./components/H1";
 
 const App = () => {
   useAOS();
 
   return (
     <>
-      <h1 className="visually-hidden">Resume: Ramil's Personal Website</h1>
+      <H1 />
       <main className="content">
         <Home />
         <AboutMe />

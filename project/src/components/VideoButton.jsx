@@ -8,9 +8,8 @@ const VideoButton = (props) => {
   const { className = "" } = props;
   const { isPlaying } = props;
   const { onClick = () => null } = props;
-  const { language } = useLanguage()
-  const isEN = language === "EN";
-  const accessibilityText = isEN ? "Play video": "Відтворити відео";
+  const { isEN } = useLanguage();
+  const accessibilityText = isEN ? "Play video" : "Відтворити відео";
   const isPlayingState = isPlaying ? CLASS_STATES.isPlaying : "";
 
   return (

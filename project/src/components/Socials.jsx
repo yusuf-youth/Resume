@@ -1,6 +1,8 @@
 import React from "react";
+import { useLanguage } from "../hooks/useLanguage";
 
 const Socials = ({ socials = [] }) => {
+  const { isEN } = useLanguage();
   if (!socials.length) return null;
 
   return (
@@ -9,12 +11,10 @@ const Socials = ({ socials = [] }) => {
         {socials.map((social, index) => (
           <li key={index} className="socials__item">
             <a
-              className={`socials__link ${
-                social.title === "iCloud" ? "socials__link--icloud" : ""
-              }`}
+              className="socials__link"
               href={social.url}
-              aria-label={social.name}
-              title={social.title}
+              aria-label={social.accessibilityText(isEN)}
+              title={social.accessibilityText(isEN)}
               target="_blank"
               rel="noopener noreferrer"
             >

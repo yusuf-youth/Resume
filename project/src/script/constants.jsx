@@ -46,27 +46,23 @@ import {
 
 export const SOCIALS = [
   {
-    name: "GitHub",
     url: "https://github.com/yusuf-youth",
-    title: "GitHub",
+    accessibilityText: () => "GitHub",
     icon: <GitHubIcon />,
   },
   {
-    name: "LinkedIn",
     url: "https://www.linkedin.com/in/ramil-bayramov-b3736420a/",
-    title: "LinkedIn",
+    accessibilityText: () => "LinkedIn",
     icon: <LinkedInIcon />,
   },
   {
-    name: "iCloud",
     url: "mailto:youclaim@icloud.com",
-    title: "Mail",
+    accessibilityText: (isEN) => (isEN ? "Mail" : "Пошта"),
     icon: <MailIcon />,
   },
   {
-    name: "Telegram",
     url: "https://t.me/dotcome1",
-    title: "Telegram",
+    accessibilityText: () => "Telegram",
     icon: <TelegramIcon />,
   },
 ];
@@ -154,55 +150,60 @@ export const SERVICES = [
     imageSrc: htmlImage,
     imageAlt: "HTML",
     key: "HTML",
-    title: (isEN) => isEN ? "Semantic" : "Семантичний",
+    title: (isEN) => (isEN ? "Semantic" : "Семантичний"),
     highlightedText: () => "HTML",
-    description: isEN => isEN
-      ? "Semantic. Accessible. To all users."
-      : "Семантичний. Доступний. Для всіх користувачів.",
+    description: (isEN) =>
+      isEN
+        ? "Semantic. Accessible. To all users."
+        : "Семантичний. Доступний. Для всіх користувачів.",
     modifierClass: "service-card__highlighted-text--orange",
   },
   {
     imageSrc: scssImage,
     imageAlt: "SCSS",
     key: "SCSS",
-    title: (isEN) => isEN ? "Modular" : "Модульна",
+    title: (isEN) => (isEN ? "Modular" : "Модульна"),
     highlightedText: () => "SCSS",
-    description: isEN => isEN
-      ? "Clean. Modular. The DRY principle."
-      : "Чисто. Модульно. Принцип DRY.",
+    description: (isEN) =>
+      isEN
+        ? "Clean. Modular. The DRY principle."
+        : "Чисто. Модульно. Принцип DRY.",
     modifierClass: "service-card__highlighted-text--purple",
   },
   {
     imageSrc: jsImage,
     imageAlt: "JS",
     key: "JS",
-    title: (isEN) => isEN ? "Robust" : "Надійний",
+    title: (isEN) => (isEN ? "Robust" : "Надійний"),
     highlightedText: () => "JS",
-    description: isEN => isEN
-      ? "Robust. Modern. Ensured code maintainability."
-      : "Надійний. Сучасний. Гарантована підтримка коду.",
+    description: (isEN) =>
+      isEN
+        ? "Robust. Modern. Ensured code maintainability."
+        : "Надійний. Сучасний. Гарантована підтримка коду.",
     modifierClass: "service-card__highlighted-text--red",
   },
   {
     imageSrc: reactImage,
     imageAlt: "React",
     key: "React",
-    title: (isEN) => isEN ? "Efficient" : "Ефективний",
+    title: (isEN) => (isEN ? "Efficient" : "Ефективний"),
     highlightedText: () => "React",
-    description: isEN => isEN
-      ? "Reusable. Testable. Encapsulated logic and UI."
-      : "Багаторазовий. Тестований. Інкапсульована логіка та інтерфейс користувача.",
+    description: (isEN) =>
+      isEN
+        ? "Reusable. Testable. Encapsulated logic and UI."
+        : "Багаторазовий. Тестований. Інкапсульована логіка та інтерфейс користувача.",
     modifierClass: "service-card__highlighted-text--blue",
   },
   {
     imageSrc: structureImage,
     imageAlt: "Folder structure",
     key: "FolderStructure",
-    title: (isEN) => isEN ? "Organized" : "Організована",
-    highlightedText: isEN => isEN ? "Structure" : "структура",
-    description: isEN => isEN 
-      ? "Structured. Scalable. No room for mess."
-      : "Структурований. Масштабований. Немає місця для безладу.",
+    title: (isEN) => (isEN ? "Organized" : "Організована"),
+    highlightedText: (isEN) => (isEN ? "Structure" : "структура"),
+    description: (isEN) =>
+      isEN
+        ? "Structured. Scalable. No room for mess."
+        : "Структурований. Масштабований. Немає місця для безладу.",
     modifierClass: "service-card__highlighted-text--green",
   },
 ];
@@ -214,35 +215,35 @@ export const NAV_ITEMS = [
     activeIcon: <HomeFillIcon />,
     titleKey: "home",
     isActive: true,
-    accessibilityText: isEN => isEN ? "Home" : "Головна",
+    accessibilityText: (isEN) => (isEN ? "Home" : "Головна"),
   },
   {
     href: "#aboutMe",
     icon: <PersonIcon />,
     activeIcon: <PersonFillIcon />,
     titleKey: "aboutMe",
-    accessibilityText: isEN => isEN ? "About Me" : "Про мене",
+    accessibilityText: (isEN) => (isEN ? "About Me" : "Про мене"),
   },
   {
     href: "#technologies",
     icon: <CodeIcon />,
     activeIcon: <CodeFillIcon />,
     titleKey: "technologies",
-    accessibilityText: isEN => isEN ? "Technologies" : "Технології",
+    accessibilityText: (isEN) => (isEN ? "Technologies" : "Технології"),
   },
   {
     href: "#projects",
     icon: <SuitCaseIcon />,
     activeIcon: <SuitCaseFillIcon />,
     titleKey: "projects",
-    accessibilityText: isEN => isEN ? "Projects" : "Проєкти",
+    accessibilityText: (isEN) => (isEN ? "Projects" : "Проєкти"),
   },
   {
     href: "#services",
     icon: <PalleteIcon />,
     activeIcon: <PalleteFillIcon />,
     titleKey: "services",
-    accessibilityText: isEN => isEN ? "What I Offer" : "Що я пропоную",
+    accessibilityText: (isEN) => (isEN ? "What I Offer" : "Що я пропоную"),
   },
 ];
 

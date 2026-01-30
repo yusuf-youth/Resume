@@ -1,10 +1,10 @@
 import React from "react";
 import { CLASS_STATES, NAV_ITEMS, TEXTS } from "../script/constants";
-import useText from "../hooks/useText";
 import useActiveSection from "../hooks/useActiveSection";
+import { useLanguage } from "../hooks/useLanguage";
 
 const Nav = () => {
-  const text = useText(TEXTS.FLOATING_NAV);
+  const { isEN } = useLanguage();
   const activeIndex = useActiveSection(NAV_ITEMS);
 
   const getActiveClass = (index) =>
@@ -18,10 +18,12 @@ const Nav = () => {
             <a
               href={item.href}
               className={`nav__link ${getActiveClass(index)}`}
-              aria-label={item.accessibilityText}
-              title={item.accessibilityText}
+              aria-label={item.accessibilityText(isEN)}
+              title={item.accessibilityText(isEN)}
             >
-              <span className="visually-hidden">{item.accessibilityText}</span>
+              <span className="visually-hidden">
+                {item.accessibilityText(isEN)}
+              </span>
               {index === activeIndex ? item.activeIcon : item.icon}
             </a>
           </li>
