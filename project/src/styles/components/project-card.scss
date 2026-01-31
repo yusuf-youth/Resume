@@ -34,7 +34,7 @@
     transition-duration: var(--transition-duration);
 
     @include tablet {
-      height: 250px;
+      height: 270px;
     }
 
     &.is-hovered {
