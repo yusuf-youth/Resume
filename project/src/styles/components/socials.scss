@@ -8,7 +8,7 @@
   }
 
   &__link {
-    @include square(19px);
+    @include square(19.5px);
     @include hover-effect;
 
     display: flex;
