@@ -34,7 +34,7 @@
     transition-duration: var(--transition-duration);
 
     @include tablet {
-      height: 270px;
+      height: 280px;
     }
 
     &.is-hovered {
@@ -48,15 +48,15 @@
     right: 12px;
 
     @include laptop {
-      top: 62.5%;
+      top: 61.5%;
     }
 
     @include tablet {
-      top: 57%;
+      top: 60%;
     }
 
     @include mobile {
-      top: 59%;
+      top: 62%;
     }
   }
 
