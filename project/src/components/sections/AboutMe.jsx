@@ -5,10 +5,11 @@ import avatarSrc from "../../icons/avatar.svg";
 import Section from "../Section";
 
 const AboutMe = () => {
-  const text = useText(TEXTS.ABOUT_ME);
+  const { title, description, startingText, highlightedText, trailingText } =
+    useText(TEXTS.ABOUT_ME);
 
   return (
-    <Section id="aboutMe" title={text.title} description={text.description}>
+    <Section id="aboutMe" title={title} description={description}>
       <div className="about-me">
         <div className="about-me__image-wrapper">
           <img
@@ -22,11 +23,9 @@ const AboutMe = () => {
         </div>
         <div className="about-me__content">
           <p className="about-me__description">
-            {text.startingText}{" "}
-            <span className="about-me__highlighted">
-              {text.highlightedText}
-            </span>{" "}
-            {text.trailingText}
+            {startingText}{" "}
+            <span className="about-me__highlighted">{highlightedText}</span>{" "}
+            {trailingText}
           </p>
         </div>
       </div>

@@ -5,10 +5,10 @@ import useText from "../../hooks/useText";
 import Section from "../Section";
 
 const Services = () => {
-  const text = useText(TEXTS.SERVICES);
+  const { title, description } = useText(TEXTS.SERVICES);
 
   return (
-    <Section id="services" title={text.title} description={text.description}>
+    <Section id="services" title={title} description={description}>
       <div className="services">
         <ul className="services__list">
           {SERVICES.map((service) => (

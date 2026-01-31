@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "./Button";
+import { useLanguage } from "../hooks/useLanguage";
 
 const References = ({ links = [] }) => {
+  const { isEN } = useLanguage();
+
   if (!links.length) return null;
 
   return (
@@ -16,7 +19,7 @@ const References = ({ links = [] }) => {
                 bordered={isBordered}
                 href={href}
               >
-                {text}
+                {text(isEN)}
               </Button>
             </li>
           ),

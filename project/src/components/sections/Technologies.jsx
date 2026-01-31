@@ -5,14 +5,10 @@ import useText from "../../hooks/useText";
 import Section from "../Section";
 
 const Technologies = () => {
-  const text = useText(TEXTS.TECHNOLOGIES);
+  const { title, description } = useText(TEXTS.TECHNOLOGIES);
 
   return (
-    <Section
-      id="technologies"
-      title={text.title}
-      description={text.description}
-    >
+    <Section id="technologies" title={title} description={description}>
       <div className="technologies">
         <ul className="technologies__list">
           {TECHNOLOGIES.map((tech, index) => (

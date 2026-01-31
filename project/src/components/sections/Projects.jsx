@@ -5,21 +5,15 @@ import useText from "../../hooks/useText";
 import Section from "../Section";
 
 const Projects = () => {
-  const text = useText(TEXTS.PROJECTS);
+  const { title, description, linkLabel } = useText(TEXTS.PROJECTS);
 
   return (
-    <Section id="projects" title={text.title} description={text.description}>
+    <Section id="projects" title={title} description={description}>
       <div className="projects">
         <ul className="projects__list">
-          {text.data.map((item, index) => (
+          {PROJECTS.map((item, index) => (
             <li key={index} className="projects__item">
-              <ProjectCard
-                className="projects__card"
-                {...item}
-                videoSrc={PROJECTS[index].videoSrc}
-                poster={PROJECTS[index].poster}
-                delay={PROJECTS[index].delay}
-              />
+              <ProjectCard className="projects__card" {...item} />
             </li>
           ))}
         </ul>
@@ -29,7 +23,7 @@ const Projects = () => {
           href="https://github.com/yusuf-youth"
           target="_blank"
         >
-          {text.linkLabel}
+          {linkLabel}
         </a>
       </div>
     </Section>

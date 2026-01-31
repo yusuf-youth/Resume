@@ -114,34 +114,142 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS = [
   {
+    label: (isEN) => (isEN ? "landing" : "лендінг"),
+    title: (isEN) => "Mintlify",
     videoSrc: mintlifyVideo,
     poster: mintlifyPoster,
     delay: 400,
+    links: [
+      {
+        modifierClass: "references__link--dark",
+        isDark: true,
+        isBordered: false,
+        href: "https://yusuf-youth.github.io/Mintlify/",
+        text: (isEN) => (isEN ? "Live Demo" : "Жива демо"),
+      },
+      {
+        modifierClass: "references__link--light",
+        isDark: false,
+        isBordered: true,
+        href: "https://github.com/yusuf-youth/Mintlify",
+        text: (isEN) => (isEN ? "GitHub Repo" : "Репозиторій GitHub"),
+      },
+    ],
   },
   {
+    label: (isEN) => "SPA",
+    title: (isEN) => (isEN ? "Architect" : "Архітектор"),
     videoSrc: architectVideo,
     poster: architectPoster,
     delay: 550,
+    links: [
+      {
+        modifierClass: "references__link--dark",
+        isDark: true,
+        isBordered: false,
+        href: "https://yusuf-youth.github.io/Architect/",
+        text: (isEN) => (isEN ? "Live Demo" : "Жива демо"),
+      },
+      {
+        modifierClass: "references__link--light",
+        isDark: false,
+        isBordered: true,
+        href: "https://github.com/yusuf-youth/Architect",
+        text: (isEN) => (isEN ? "GitHub Repo" : "Репозиторій GitHub"),
+      },
+    ],
   },
   {
+    label: (isEN) => (isEN ? "app" : "додаток"),
+    title: (isEN) => (isEN ? "Tasks" : "Задачі"),
     videoSrc: tasksVideo,
     poster: tasksPoster,
     delay: 750,
+    links: [
+      {
+        modifierClass: "references__link--dark",
+        isDark: true,
+        isBordered: false,
+        href: "https://yusuf-youth.github.io/Tasks/",
+        text: (isEN) => (isEN ? "Live Demo" : "Жива демо"),
+      },
+      {
+        modifierClass: "references__link--light",
+        isDark: false,
+        isBordered: true,
+        href: "https://github.com/yusuf-youth/Tasks",
+        text: (isEN) => (isEN ? "GitHub Repo" : "Репозиторій GitHub"),
+      },
+    ],
   },
   {
+    label: (isEN) => (isEN ? "landing" : "лендінг"),
+    title: (isEN) => (isEN ? "Magazine" : "Журнал"),
     videoSrc: magazineVideo,
     poster: magazinePoster,
     delay: 400,
+    links: [
+      {
+        modifierClass: "references__link--dark",
+        isDark: true,
+        isBordered: false,
+        href: "https://yusuf-youth.github.io/Magazine/",
+        text: (isEN) => (isEN ? "Live Demo" : "Жива демо"),
+      },
+      {
+        modifierClass: "references__link--light",
+        isDark: false,
+        isBordered: true,
+        href: "https://github.com/yusuf-youth/Magazine",
+        text: (isEN) => (isEN ? "GitHub Repo" : "Репозиторій GitHub"),
+      },
+    ],
   },
   {
+    label: (isEN) => "SPA",
+    title: (isEN) => "Dashboard",
     videoSrc: dashboardVideo,
     poster: dashboardPoster,
     delay: 550,
+    links: [
+      {
+        modifierClass: "references__link--dark",
+        isDark: true,
+        isBordered: false,
+        href: "https://yusuf-youth.github.io/Dashboard/",
+        text: (isEN) => (isEN ? "Live Demo" : "Жива демо"),
+      },
+      {
+        modifierClass: "references__link--light",
+        isDark: false,
+        isBordered: true,
+        href: "https://github.com/yusuf-youth/Dashboard",
+        text: (isEN) => (isEN ? "GitHub Repo" : "Репозиторій GitHub"),
+      },
+    ],
   },
   {
+    label: (isEN) => (isEN ? "app" : "додаток"),
+    title: (isEN) => "Focusify",
     videoSrc: focusifyVideo,
     poster: focusifyPoster,
     delay: 750,
+    links: [
+      {
+        modifierClass: "references__link--dark",
+        isDark: true,
+        isBordered: false,
+        href: "https://yusuf-youth.github.io/Focusify/",
+        text: (isEN) => (isEN ? "Live Demo" : "Жива демо"),
+      },
+      {
+        modifierClass: "references__link--light",
+        isDark: false,
+        isBordered: true,
+        href: "https://github.com/yusuf-youth/Focusify",
+        text: (isEN) => (isEN ? "GitHub Repo" : "Репозиторій GitHub"),
+      },
+    ],
   },
 ];
 

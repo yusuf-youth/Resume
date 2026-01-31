@@ -2,11 +2,13 @@ import React from "react";
 import { useRef, useState } from "react";
 import References from "./References";
 import VideoButton from "./VideoButton";
+import { useLanguage } from "../hooks/useLanguage";
 
 const ProjectCard = (props) => {
+  const { isEN } = useLanguage();
   const { className } = props;
-  const { title } = props;
   const { label } = props;
+  const { title } = props;
   const { videoSrc } = props;
   const { poster } = props;
   const { delay } = props;
@@ -45,8 +47,8 @@ const ProjectCard = (props) => {
           onClick={onClick}
         />
         <div className="project-card__body">
-          <span className="project-card__label">{label}</span>
-          <h3 className="project-card__title h4">{title}</h3>
+          <span className="project-card__label">{label(isEN)}</span>
+          <h3 className="project-card__title h4">{title(isEN)}</h3>
           <References links={links} />
         </div>
       </article>
