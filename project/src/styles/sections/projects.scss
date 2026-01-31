@@ -28,13 +28,14 @@
   }
 
   &__link {
-    @include fluid-text(16, 14);
+    // @include fluid-text(16, 14);
     @include hover-effect;
 
     align-self: flex-end;
+    font-size: 16px;
 
-    &::after {
-      @include square(14px);
-    }
+    // &::after {
+    //   @include square(14px);
+    // }
   }
 }
