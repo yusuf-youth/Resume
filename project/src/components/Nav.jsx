@@ -7,8 +7,9 @@ const Nav = () => {
   const { isEN } = useLanguage();
   const activeIndex = useActiveSection(NAV_ITEMS);
 
-  const getActiveClass = (index) =>
-    index === activeIndex ? CLASS_STATES.isActive : "";
+  const getActiveClass = (index) => {
+    return index === activeIndex ? CLASS_STATES.isActive : "";
+  };
 
   return (
     <nav className="nav">

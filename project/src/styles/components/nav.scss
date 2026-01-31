@@ -40,6 +40,10 @@
 
     svg {
       @include square(23px);
+
+      @include mobile {
+        @include square(26px);
+      }
     }
   }
 }

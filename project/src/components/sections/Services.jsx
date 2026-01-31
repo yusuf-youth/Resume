@@ -11,9 +11,9 @@ const Services = () => {
     <Section id="services" title={title} description={description}>
       <div className="services">
         <ul className="services__list">
-          {SERVICES.map((service) => (
-            <li key={service.key} className="services__item">
-              <ServiceCard className="what-i-offer__card" data={service} />
+          {SERVICES.map((service, index) => (
+            <li key={index} className="services__item">
+              <ServiceCard className="what-i-offer__card" {...service} />
             </li>
           ))}
         </ul>

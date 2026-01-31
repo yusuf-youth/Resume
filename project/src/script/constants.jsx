@@ -257,7 +257,7 @@ export const SERVICES = [
   {
     imageSrc: htmlImage,
     imageAlt: "HTML",
-    key: "HTML",
+    // key: "HTML",
     title: (isEN) => (isEN ? "Semantic" : "Семантичний"),
     highlightedText: () => "HTML",
     description: (isEN) =>
@@ -269,7 +269,7 @@ export const SERVICES = [
   {
     imageSrc: scssImage,
     imageAlt: "SCSS",
-    key: "SCSS",
+    // key: "SCSS",
     title: (isEN) => (isEN ? "Modular" : "Модульна"),
     highlightedText: () => "SCSS",
     description: (isEN) =>
@@ -281,7 +281,7 @@ export const SERVICES = [
   {
     imageSrc: jsImage,
     imageAlt: "JS",
-    key: "JS",
+    // key: "JS",
     title: (isEN) => (isEN ? "Robust" : "Надійний"),
     highlightedText: () => "JS",
     description: (isEN) =>
@@ -293,7 +293,7 @@ export const SERVICES = [
   {
     imageSrc: reactImage,
     imageAlt: "React",
-    key: "React",
+    // key: "React",
     title: (isEN) => (isEN ? "Efficient" : "Ефективний"),
     highlightedText: () => "React",
     description: (isEN) =>
@@ -305,7 +305,7 @@ export const SERVICES = [
   {
     imageSrc: structureImage,
     imageAlt: "Folder structure",
-    key: "FolderStructure",
+    // key: "FolderStructure",
     title: (isEN) => (isEN ? "Organized" : "Організована"),
     highlightedText: (isEN) => (isEN ? "Structure" : "структура"),
     description: (isEN) =>

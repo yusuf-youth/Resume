@@ -4,13 +4,12 @@ import { useLanguage } from "../hooks/useLanguage";
 const ServiceCard = (props) => {
   const { isEN } = useLanguage();
   const { classname } = props;
-  const { data } = props;
-  const { imageSrc } = data;
-  const { imageAlt } = data;
-  const { title } = data;
-  const { highlightedText } = data;
-  const { description } = data;
-  const { modifierClass } = data;
+  const { imageSrc } = props;
+  const { imageAlt } = props;
+  const { title } = props;
+  const { highlightedText } = props;
+  const { description } = props;
+  const { modifierClass } = props;
 
   return (
     <article className={`${classname} service-card`}>
