@@ -3,7 +3,9 @@
 .video-button {
   @include reset-button;
   @include center-content(true);
+  @include square(30px);
 
+  background-color: var(--color-light);
   border-radius: 50%;
   box-shadow: var(--shadow);
 
@@ -13,17 +15,42 @@
   }
 
   &.is-playing {
+    // background-color: var(--color-light-alt);
+    background-color: transparent;
+    // box-shadow: none;
     opacity: 1;
     pointer-events: none !important;
 
-    svg {
-      color: var(--color-gray-alt);
-    }
+    // svg {
+    //   animation: fade 2s linear infinite;
+    //   color: red;
+
+    //   path {
+    //     @include square(25px);
+    //   }
+    // }
+  }
+
+  &__dot {
+    @include square(7px);
+
+    background-color: red;
+    border-radius: 50%;
+    animation: fade 3s linear infinite;
   }
 
   svg {
     @include square(30px);
 
     color: var(--color-dark);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
   }
 }

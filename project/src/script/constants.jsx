@@ -87,13 +87,13 @@ export const TECHNOLOGIES = [
     modifierClass: "tech-card--scss",
   },
   {
-    label: "JS",
+    label: "JavaScript",
     icon: <JSIcon />,
     delay: 1150,
     modifierClass: "tech-card--js",
   },
   {
-    label: "TS",
+    label: "TypeScript",
     icon: <TSIcon />,
     delay: 1350,
     modifierClass: "tech-card--ts",
@@ -107,7 +107,7 @@ export const TECHNOLOGIES = [
   {
     label: "React Router DOM",
     icon: <ReactRouterDOMIcon />,
-    delay: 1050,
+    delay: 1750,
     modifierClass: "tech-card--",
   },
 ];

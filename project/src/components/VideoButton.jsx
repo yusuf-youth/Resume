@@ -1,7 +1,7 @@
 import React from "react";
 import useText from "../hooks/useText";
 import { CLASS_STATES, TEXTS } from "../script/constants";
-import { PauseIcon, PlayIcon } from "../script/icons";
+import { ArrowClockwise, Dot, PauseIcon, PlayIcon } from "../script/icons";
 import { useLanguage } from "../hooks/useLanguage";
 
 const VideoButton = (props) => {
@@ -19,7 +19,7 @@ const VideoButton = (props) => {
       aria-label={accessibilityText}
       title={accessibilityText}
     >
-      {isPlaying ? <PauseIcon /> : <PlayIcon />}
+      {isPlaying ? <span className="video-button__dot"></span> : <PlayIcon />}
     </button>
   );
 };
