@@ -1,7 +1,6 @@
 import React from "react";
-import useText from "../hooks/useText";
-import { CLASS_STATES, TEXTS } from "../script/constants";
-import { ArrowClockwise, Dot, PauseIcon, PlayIcon } from "../script/icons";
+import { CLASS_STATES } from "../script/constants";
+import { PlayIcon } from "../script/icons";
 import { useLanguage } from "../hooks/useLanguage";
 
 const VideoButton = (props) => {

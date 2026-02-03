@@ -60,11 +60,11 @@ export const SOCIALS = [
     accessibilityText: (isEN) => (isEN ? "Mail" : "Пошта"),
     icon: <MailIcon />,
   },
-  {
-    url: "https://t.me/dotcome1",
-    accessibilityText: () => "Telegram",
-    icon: <TelegramIcon />,
-  },
+  // {
+  //   url: "https://t.me/dotcome1",
+  //   accessibilityText: () => "Telegram",
+  //   icon: <TelegramIcon />,
+  // },
 ];
 
 export const TECHNOLOGIES = [

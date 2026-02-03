@@ -15,20 +15,9 @@
   }
 
   &.is-playing {
-    // background-color: var(--color-light-alt);
-    background-color: transparent;
-    // box-shadow: none;
+    background-color: var(--color-light-alt);
     opacity: 1;
     pointer-events: none !important;
-
-    // svg {
-    //   animation: fade 2s linear infinite;
-    //   color: red;
-
-    //   path {
-    //     @include square(25px);
-    //   }
-    // }
   }
 
   &__dot {

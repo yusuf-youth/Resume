@@ -6,7 +6,7 @@ import useText from "../../hooks/useText";
 import iconSrc from "../../icons/profile.svg";
 import Button from "../Button";
 import Section from "../Section";
-// import resumeFile from "../../assets/Taha-Umar-Frontend-Resume.pdf";
+import resumeFile from "../../assets/Ramil_Bayramov_Frontend_Developer_Confidential.pdf";
 
 const Home = () => {
   const { subheading, heading, text, buttonLabel } = useText(TEXTS.HOME);
@@ -35,7 +35,7 @@ const Home = () => {
 
           <div className="home__actions">
             <Socials socials={SOCIALS} />
-            <Button className="home__button" href={"#"}>
+            <Button className="home__button" href={resumeFile}>
               {buttonLabel}
             </Button>
           </div>
