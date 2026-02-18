@@ -1,5 +1,5 @@
 import React from "react";
-import { CLASS_STATES, NAV_ITEMS, TEXTS } from "../script/constants";
+import { CLASS_STATES, NAV_ITEMS } from "../script/constants";
 import useActiveSection from "../hooks/useActiveSection";
 import { useLanguage } from "../hooks/useLanguage";
 
