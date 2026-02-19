@@ -6,7 +6,7 @@ import useText from "../../hooks/useText";
 import iconSrc from "../../icons/profile.svg";
 import Button from "../Button";
 import Section from "../Section";
-import resumeFile from "../../assets/Ramil_Bayramov_Frontend_Developer_Confidential.pdf";
+import resumeFile from "../../assets/Ramil_Bayramov_Frontend_Developer.pdf";
 
   const Home = () => {
     const { subheading, heading, text, buttonLabel } = useText(TEXTS.HOME);
