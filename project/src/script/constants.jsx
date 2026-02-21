@@ -55,16 +55,16 @@ export const SOCIALS = [
     accessibilityText: () => "LinkedIn",
     icon: <LinkedInIcon />,
   },
-  {
-    url: "mailto:youclaim@icloud.com",
-    accessibilityText: (isEN) => (isEN ? "Mail" : "Пошта"),
-    icon: <MailIcon />,
-  },
   // {
-  //   url: "https://t.me/dotcome1",
-  //   accessibilityText: () => "Telegram",
-  //   icon: <TelegramIcon />,
+  //   url: "mailto:youclaim@icloud.com",
+  //   accessibilityText: (isEN) => (isEN ? "Mail" : "Пошта"),
+  //   icon: <MailIcon />,
   // },
+  {
+    url: "https://t.me/dotcome1",
+    accessibilityText: () => "Telegram",
+    icon: <TelegramIcon />,
+  },
 ];
 
 export const TECHNOLOGIES = [

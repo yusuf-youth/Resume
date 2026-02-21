@@ -3,18 +3,18 @@ export const translations = {
         home: {
             subheading: "Hi! I'm",
             heading: "Ramil",
-            text: "Frontend Developer with a focus on clean, polished design.",
+            text: "Frontend Developer with 10 months of experience.",
             buttonLabel: "View Resume",
         },
         aboutMe: {
             title: "About Me",
             description:
                 "Frontend Developer passionate about creating clean, user-friendly web experiences.",
-            startingText: "I'm dedicated to building",
+            startingText: "I'm dedicated to building user-centric UIs with a focus on clean, polished design.",
             highlightedText:
-                "user-centric UIs with a focus on clean, polished design",
+                "With 10 months of hands-on experience featuring 13 projects",
             trailingText:
-                "using HTML, CSS (SCSS), JS (TS) and React. Over 9 months of hands-on experience featuring 13 projects in GitHub, I’m currently seeking an internship to apply my skills, grow into a junior level, start to build meaningful products, and make a dent in the universe.",
+                "in GitHub from landing pages and apps to SPAs. Currently seeking a Junior role to apply my skills and start to make a dent in the universe.",
         },
         technologies: {
             title: "Technologies",
@@ -201,18 +201,18 @@ export const translations = {
         home: {
             subheading: "Привіт! Я",
             heading: "Раміль",
-            text: "Фронтенд-розробник, орієнтований на чистий і відточений дизайн.",
+            text: "Фронтенд-розробник з 10-місячним досвідом роботи.",
             buttonLabel: "Переглянути резюме",
         },
         aboutMe: {
             title: "Про мене",
             description:
                 "Frontend-розробник, який захоплюється створенням чистого та зручного веб-інтерфейсу.",
-            startingText: "Я присвячуюся створенню",
+            startingText: "Я присвячуюся створенню орієнтованих на користувача інтерфейсів, зосереджуючись на чистому та відшліфованому дизайні.",
             highlightedText:
-                "орієнтованих на користувача інтерфейсів, зосереджуючись на чистому та відшліфованому дизайні",
+                "Маю 10 місяців практичного досвіду роботи над 13 проектами",
             trailingText:
-                "використовуючи HTML, CSS (SCSS), JS (TS) і React. Маю понад 9 місяців практичного досвіду роботи над 13 проектами на GitHub. Наразі я шукаю стажування, щоб застосувати свої навички, досягти рівня юніора, почати створювати змістовні продукти, та зробити свій внесок у розвиток всесвіту.",
+                "на GitHub, від лендінгів та додатків до SPA. Наразі шукаю Junior посаду, щоб застосувати свої навички та почати змінювати світ на краще.",
         },
         technologies: {
             title: "Технології",
