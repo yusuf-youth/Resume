@@ -14,7 +14,7 @@ export const translations = {
             highlightedText:
                 "With 10 months of hands-on experience featuring 13 projects",
             trailingText:
-                "in GitHub from landing pages and apps to SPAs. Currently seeking a Junior role to apply my skills and start to make a dent in the universe.",
+                "in GitHub from landing pages and apps to SPAs. Passion, collaboration and meeting the deadline — what I'm all about.",
         },
         technologies: {
             title: "Technologies",
@@ -212,7 +212,7 @@ export const translations = {
             highlightedText:
                 "Маю 10 місяців практичного досвіду роботи над 13 проектами",
             trailingText:
-                "на GitHub, від лендінгів та додатків до SPA. Наразі шукаю Junior посаду, щоб застосувати свої навички та почати змінювати світ на краще.",
+                "на GitHub, від лендінгів та додатків до SPA. Пристрасть, співпраця та дотримання дедлайнів — це те, про що я.",
         },
         technologies: {
             title: "Технології",
