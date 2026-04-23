@@ -11,8 +11,8 @@ import useAOS from "./hooks/useAOS";
 import H1 from "./components/H1";
 
 const App = () => {
-  useAOS();
-   
+  useAOS();  
+  
   return (
     <>
       <H1 />
